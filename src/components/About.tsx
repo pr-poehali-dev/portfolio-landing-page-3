@@ -1,56 +1,28 @@
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-card/50">
+    <section id="about" className="py-24 bg-card/20">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto text-center space-y-12">
-          <div className="space-y-4">
-            <h2 className="font-montserrat font-bold text-4xl lg:text-5xl neon-text">
-              Обо мне
+        <div className="max-w-4xl mx-auto text-center space-y-16">
+          <div className="space-y-6">
+            <h2 className="font-montserrat font-bold text-5xl lg:text-6xl neon-text">
+              О себе
             </h2>
-            <p className="font-inter text-muted-foreground text-lg">
-              Моя история и подход к работе
-            </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 text-left">
-            <div className="space-y-6">
-              <h3 className="font-montserrat font-semibold text-2xl text-primary">
-                Мой путь
-              </h3>
-              <p className="font-inter text-muted-foreground leading-relaxed">
-                Я увлечён созданием цифровых решений, которые объединяют
-                красивый дизайн и функциональность. Мой опыт охватывает
-                frontend-разработку, UX/UI дизайн и создание брендинга.
-              </p>
-              <p className="font-inter text-muted-foreground leading-relaxed">
-                Работаю с современными технологиями и всегда открыт для изучения
-                новых инструментов, которые помогают создавать лучшие продукты.
-              </p>
-            </div>
+          <div className="space-y-8 animate-fade-in">
+            <p className="font-playfair text-2xl lg:text-3xl text-foreground leading-relaxed">
+              Я не просто пробую — я ищу то, что будет иметь смысл.
+            </p>
 
-            <div className="space-y-6">
-              <h3 className="font-montserrat font-semibold text-2xl text-primary">
-                Принципы работы
-              </h3>
-              <ul className="space-y-3 font-inter text-muted-foreground">
-                <li className="flex items-start space-x-3">
-                  <span className="text-primary">•</span>
-                  <span>Качество превыше скорости</span>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <span className="text-primary">•</span>
-                  <span>Внимание к деталям в каждом пикселе</span>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <span className="text-primary">•</span>
-                  <span>Открытое общение с клиентами</span>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <span className="text-primary">•</span>
-                  <span>Постоянное обучение и развитие</span>
-                </li>
-              </ul>
-            </div>
+            <p className="font-playfair text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+              Я кайфую от визуала, от крутого сторителлинга, от ощущения «я
+              сделал это». Мечтаю собрать команду и запустить большой творческий
+              проект.
+            </p>
+
+            <p className="font-playfair text-lg text-muted-foreground/80 leading-relaxed">
+              Пока учусь, пробую, накапливаю скиллы. Но план уже есть.
+            </p>
           </div>
         </div>
       </div>

@@ -21,43 +21,28 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 w-full z-50 transition-all duration-500 ${
         isScrolled
-          ? "bg-background/80 backdrop-blur-md border-b border-border"
+          ? "bg-background/90 backdrop-blur-xl border-b border-border/50"
           : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-6 py-4">
+      <div className="container mx-auto px-6 py-6">
         <nav className="flex items-center justify-between">
-          <div className="font-montserrat font-bold text-xl neon-text">
-            David Rokhlis
+          <div className="space-y-1">
+            <h1 className="font-montserrat font-bold text-2xl neon-text tracking-wider">
+              DAVID
+            </h1>
+            <p className="font-playfair text-sm text-muted-foreground italic">
+              Создаю. Визуализирую. Думаю масштабно.
+            </p>
           </div>
 
-          <div className="hidden md:flex space-x-8">
-            {["hero", "about", "skills", "projects", "contact"].map(
-              (section) => (
-                <button
-                  key={section}
-                  onClick={() => scrollToSection(section)}
-                  className="font-inter text-sm uppercase tracking-wider hover:text-primary transition-colors duration-300 hover:neon-text"
-                >
-                  {section === "hero"
-                    ? "Главная"
-                    : section === "about"
-                      ? "Обо мне"
-                      : section === "skills"
-                        ? "Навыки"
-                        : section === "projects"
-                          ? "Проекты"
-                          : "Контакты"}
-                </button>
-              ),
-            )}
-          </div>
-
-          <div className="md:hidden">
-            <Icon name="Menu" size={24} className="text-primary" />
-          </div>
+          <button className="gradient-border hover:glow-box transition-all duration-300">
+            <div className="gradient-border-inner px-6 py-3 font-montserrat font-semibold text-sm tracking-wide">
+              Скачать резюме PDF
+            </div>
+          </button>
         </nav>
       </div>
     </header>
